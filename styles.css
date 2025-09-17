@@ -2,15 +2,18 @@
   margin: 20px;
 }
 
+/* ::before pseudo-element */
 #container::before {
-  content: "Before Element ";
+  content: "Before Element";   /* ✅ no extra space */
   color: #f00;
   font-size: 20px;
+  margin-right: 5px;           /* spacing via CSS instead of inside quotes */
 }
 
-
+/* ::after pseudo-element */
 #container::after {
-  content: " After Element";
+  content: "After Element";    /* ✅ no extra space */
   color: #f00;
   font-size: 20px;
+  margin-left: 5px;            /* spacing via CSS instead of inside quotes */
 }
